@@ -11,37 +11,53 @@ body {
 }
 
 .wrapper {
-  max-width: 1024px;
   width: 100%;
-  margin: 0 auto;
-  padding: 0 16px;
+  margin: 0;
+  padding: 16px;
   box-sizing: border-box;
 }
 
 .header {
-
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  position: sticky;
+  margin: 0;
+  padding: 16px;
+  gap: 24px;
+  background-color: #FFC300;
 }
 
 .brewery-logo {
-
+ position: absolute;
+  top: 5px;
+  left: 30px;
 }
 
-.beers-button {
-
-}
-
-.shop-button {
-
-}
-
-.brewery-button {
-
-}
-
-.contact-button {
-
+.beers-button, 
+.shop-button, 
+.brewery-button, 
+.contact-button  {
+  color: black;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.5s ease;
 }
 
 .shopping-bag-button {
-  
+  position: relative;
+  display: inline-block;
+  border: none;
+  background-color: #FFC300;
+  padding: 0;
+  transition: color 1s ease;
+}
+
+.beers-button:hover, 
+.shop-button:hover, 
+.brewery-button:hover, 
+.contact-button:hover,
+.shopping-bag-button:hover  {
+  color: white;
 }
