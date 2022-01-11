@@ -30,7 +30,6 @@ h3 {
   flex-flow: row nowrap;
   align-items: center;
   justify-content: flex-end;
-  position: sticky;
   margin: 0;
   padding: 16px;
   gap: 24px;
