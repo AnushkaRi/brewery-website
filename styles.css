@@ -179,6 +179,15 @@ p {
   height: 300px;
 }
 
+.ipa-beer,
+.porter-beer,
+.lager-beer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 32px;
+}
+
 .ipa-link, 
 .porter-link,
 .lager-link {
@@ -189,11 +198,21 @@ p {
   text-decoration: none;
 }
 
-.ipa-beer,
-.porter-beer,
-.lager-beer {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  gap: 32px;
+.underbar{
+  width: 40px;
+  height: 5px;
+  background: rgb(36, 182, 84);
+  top: 20px;
+  position: absolute;
+  animation: slide 4s ease infinite forwards;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 1;
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
 }
