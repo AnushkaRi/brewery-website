@@ -60,9 +60,34 @@ p {
   transition: color 0.5s ease;
 }
 
+.beers-link:after, 
+.shop-link:after, 
+.brewery-link:after, 
+.contact-link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+.beers-link:hover:after, 
+.shop-link:hover:after, 
+.brewery-link:hover:after, 
+.contact-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  color: white;
+}
+
 .shopping-bag-button {
-  position: relative;
   display: inline-block;
+  position: relative;
   border: none;
   background-color: #FFC300;
   padding: 0;
@@ -139,8 +164,8 @@ p {
 }
 
 .shop-new-beer-button {
-  position: relative;
   display: inline-block;
+  position: relative;
   font-size: 1.5rem;
   font-weight: 700;
   border: white 5px solid;
@@ -191,28 +216,31 @@ p {
 .ipa-link, 
 .porter-link,
 .lager-link {
-  position: relative;
   display: inline-block;
+  position: relative;
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
 }
 
-.underbar{
-  width: 40px;
-  height: 5px;
-  background: rgb(36, 182, 84);
-  top: 20px;
+.ipa-link:after,
+.porter-link:after,
+.lager-link:after {
+  content: '';
   position: absolute;
-  animation: slide 4s ease infinite forwards;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #FFC300;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
 }
 
-@keyframes slide {
-  0% {
-    opacity: 1;
-    transform: translate3d(-100%, 0, 0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
+.ipa-link:hover:after,
+.porter-link:hover:after,
+.lager-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
