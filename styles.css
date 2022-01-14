@@ -31,6 +31,7 @@ p {
 
 .header {
   position: sticky;
+  z-index: 1;
   top: 0;
   display: flex;
   flex-flow: row nowrap;
@@ -48,10 +49,7 @@ p {
   left: 30px;
 }
 
-.beers-link, 
-.shop-link, 
-.brewery-link, 
-.contact-link  {
+.link  {
   position: relative;
   display: inline-block;
   color: black;
@@ -60,10 +58,7 @@ p {
   transition: color 0.5s ease;
 }
 
-.beers-link:after, 
-.shop-link:after, 
-.brewery-link:after, 
-.contact-link:after {
+.link:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -76,10 +71,7 @@ p {
   transition: transform 0.5s ease-out;
 }
 
-.beers-link:hover:after, 
-.shop-link:hover:after, 
-.brewery-link:hover:after, 
-.contact-link:hover:after {
+.link:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
   color: white;
@@ -94,10 +86,7 @@ p {
   transition: color 1s ease;
 }
 
-.beers-link:hover, 
-.shop-link:hover, 
-.brewery-link:hover, 
-.contact-link:hover,
+.link:hover, 
 .shopping-bag-button:hover  {
   color: white;
 }
@@ -213,9 +202,7 @@ p {
   gap: 32px;
 }
 
-.ipa-link, 
-.porter-link,
-.lager-link {
+.slide-link {
   display: inline-block;
   position: relative;
   font-size: 1.5rem;
@@ -223,9 +210,7 @@ p {
   text-decoration: none;
 }
 
-.ipa-link:after,
-.porter-link:after,
-.lager-link:after {
+.slide-link:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -238,9 +223,7 @@ p {
   transition: transform 0.5s ease-out;
 }
 
-.ipa-link:hover:after,
-.porter-link:hover:after,
-.lager-link:hover:after {
+.slide-link:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
