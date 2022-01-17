@@ -102,7 +102,7 @@ p {
   background: repeat center url(./Images/blue\ wall.jpg);
 }
 
-.beer-online {
+.buy-beer-chapter > h1 {
   margin-bottom: 48px;
 }
 
@@ -144,11 +144,12 @@ p {
   top: -50px;
 }
 
-.hoptopuss {
+.new-beer-text > h3 {
   color: #FFC300;
+  margin: 32px 0;
 }
 
-.ipa-text {
+.new-beer-text > p {
   font-size: 1.1rem;
   margin-bottom: 48px;
 }
@@ -171,15 +172,15 @@ p {
 }
 
 .beers-chapter {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    height: 600px;
-    gap: 16px;
-    margin-top: 32px;
-    color: black;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  gap: 16px;
+  margin-top: 32px;
+  color: black;
 }
 
 .craft-beers {
@@ -245,6 +246,10 @@ p {
   margin: 8px 16px;
 }
 
+.subscribe-chapter > p  {
+  padding: 0 16px;
+}
+
 .email {
   box-sizing: border-box;
   display: inline-block;
@@ -263,10 +268,10 @@ p {
   display: inline-block;
   font-size: 1.5rem;
   font-weight: 700;
+  color: white;
   border: white 5px solid;
   padding: 18px;
   text-decoration: none;
-  color: white;
   transition: background-color 1s ease, color 1s ease;
 }
 
