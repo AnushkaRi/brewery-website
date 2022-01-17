@@ -279,3 +279,14 @@ p {
   background-color: white;
   color: black;
 }
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    padding: 0 8px;
+    align-items: center;
+  }
+
+  .craft-beers {
+    flex-direction: column;
+  }
+}
